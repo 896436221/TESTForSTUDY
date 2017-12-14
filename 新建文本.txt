@@ -1,5 +1,0 @@
-1.@RestControllar   :  写的是web应用，就要用到这个注解，这个注解相当于@Controllar和@ResponseBody
-2.@EnableAutoConfiguration：springboot会根据你的jar包的依赖来自动配置项目，例如当我的项目下面有HSQLDB的依赖时，Springbooth会默认创建的内存数据库的数据源DataSource，如果你自己创建了，DataSource，springboot就不会创建默认的DataSource。如果不想SpringBoot自动创建，添加属性exclude
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
-3.@Configuration中 配置主要的source（建议），通常main方法类也作为@Configuration的一个好的选择，您不需要将所有的@Configuration放在一个类中。 @Import注解可用于导入其他配置类。 或者，您可以使用@ComponentScan自动扫描所有Spring组件，包括@Configuration类。然后，您可以使用的@ImportResource注释来加载XML配置文件。
-4.
